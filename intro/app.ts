@@ -11,7 +11,7 @@ const response = await openai.chat.completions.create({
     messages: [
       {
         role: "user",
-        content: "Hey, my name is Ariel, greet me.",
+        content: "Hey, my name is Shiran, greet me.",
       }
     ]
   });
