@@ -3,7 +3,7 @@ dotenv.config();
 
 import OpenAi from "openai";
 
-const openai = new OpenAi();
+const openai = new OpenAi({ apiKey: process.env.OPENAI_API_KEY });
 
 const response = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
